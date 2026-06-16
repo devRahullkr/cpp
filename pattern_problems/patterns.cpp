@@ -83,14 +83,45 @@ using namespace std;
 
 // triangle pattern with n rows
 
+// int main(){
+//     int n = 4;
+//     for(int i = 0 ; i < n ; i++){
+//         for(int j = 0 ; j <= i ; j++){
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+
+// triangle pattern with constant num in each row with n times
+
+// int main(){
+//     int n = 4;
+//     for(int i = 0 ; i < n ; i++){
+//         for(int j = 0 ; j <= i ; j++){
+//             cout << (i + 1) << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+
+// character triangle pattern with n rows
+
 int main(){
-    int n = 4;
+    int n = 5;
+    char ch = 'A';
     for(int i = 0 ; i < n ; i++){
         for(int j = 0 ; j <= i ; j++){
-            cout << "* ";
+            cout << ch << " ";   
         }
+        ch += 1;
         cout << endl;
     }
+    return 0;
 }
+
 
 
