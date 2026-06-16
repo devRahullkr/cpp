@@ -47,21 +47,50 @@ using namespace std;
 // }
 
 
-// square pattern with continous number with start from n
+// square pattern with continuos number with start from n
+
+// int main(){
+//     int n = 4;
+//     int num = 1;
+
+//     for(int i = 0 ; i < n ; i++){
+//         for(int j = 0 ; j < n ; j++){
+//             cout << num << " ";
+//             num += 1;
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+
+// square pattern with increasing alphabet order with n times
+// int main(){
+
+//     int n = 3;
+//     char ch = 'A';
+//     for(int i = 0 ; i < n ; i++){
+//         for(int j = 0 ; j < n ; j++){
+//             cout << ch << " ";
+//             ch += 1;
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+
+// triangle pattern with n rows
 
 int main(){
     int n = 4;
-    int num = 1;
-
     for(int i = 0 ; i < n ; i++){
-        for(int j = 0 ; j < n ; j++){
-            cout << num << " ";
-            num += 1;
+        for(int j = 0 ; j <= i ; j++){
+            cout << "* ";
         }
         cout << endl;
     }
-
-    return 0;
 }
 
 
