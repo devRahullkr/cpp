@@ -47,6 +47,21 @@ using namespace std;
 // }
 
 
-// PASS BY VALUE
+// PASS BY VALUE example
+
+int sum(int a, int b){
+    int sum = 0;
+    a = a + 10;
+    b = b + 10;
+    sum += a + b;
+    return sum;
+}
+
+int main(){
+    int a = 5;
+    int b = 4;
+    cout << "sum of a and b = " << sum(a,b) << endl;
+    return 0;
+}
 
 
