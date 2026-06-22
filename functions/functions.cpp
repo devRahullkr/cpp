@@ -67,18 +67,45 @@ using namespace std;
 
 // calculate sum of digits of a number
 
-int sumOfDigit(int n){
-    int sum = 0;
-    while( n > 0){
-        int last = n % 10;
-        sum += last;
-        n = n / 10;
+// int sumOfDigit(int n){
+//     int sum = 0;
+//     while( n > 0){
+//         int last = n % 10;
+//         sum += last;
+//         n = n / 10;
+//     }
+//     return sum;
+// }
+
+// int main(){
+//     cout << "sum of digits = " << sumOfDigit(1456) << endl;
+//     return 0;
+// }
+
+
+// calculate nCr binomial coefficient for n and r;
+
+int factOfn(int n){
+    int fact = 1;
+    for(int i = 1 ; i <= n ; i++){
+        fact *= i;
     }
-    return sum;
+    return fact;
 }
 
+int ncr(int n, int r){
+    int fact_n = factOfn(n);
+    int fact_r = factOfn(r);
+    int fact_n_r = factOfn(n-r);
+    int ncr = fact_n / (fact_r * fact_n_r);
+    return ncr;
+}
+
+
 int main(){
-    cout << "sum of digits = " << sumOfDigit(1456) << endl;
+    int n = 8;
+    int r = 4;
+    cout << "nCr = " << ncr(n,r) << endl;
     return 0;
 }
 
